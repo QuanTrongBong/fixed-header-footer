@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bài thực hành bố cục fixed header và fixed footer bằng HTML, CSS.">
+  <title>Fixed Header &amp; Footer — Thực hành CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Điều hướng chính">
+      <a class="brand" href="#home">FIXED<span>LAYOUT</span></a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main" id="home">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">THỰC HÀNH HTML &amp; CSS</p>
+      <h1 id="page-title">Fixed Header<br>và Fixed Footer</h1>
+      <p class="hero-copy">Cuộn trang để thấy thanh điều hướng phía trên và chân trang phía dưới luôn cố định trong màn hình.</p>
+      <a class="scroll-link" href="#news">Khám phá nội dung <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="content-section" id="news" aria-labelledby="news-title">
+      <p class="eyebrow">01 / NEWS</p>
+      <h2 id="news-title">Thanh điều hướng luôn trong tầm tay</h2>
+      <p>Header được đặt với <code>position: fixed</code> và <code>top: 0</code>, vì vậy nó vẫn ở trên cùng khi bạn cuộn xuống. Các liên kết giúp chuyển nhanh tới từng phần của trang.</p>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="card-number">01</span>
+          <h3>Cố định phía trên</h3>
+          <p>Thuộc tính <code>top: 0</code> ghim menu vào mép trên của cửa sổ trình duyệt.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-number">02</span>
+          <h3>Luôn dễ truy cập</h3>
+          <p>Người dùng có thể dùng menu bất cứ lúc nào mà không cần cuộn ngược lên đầu trang.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section alt-section" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">02 / CONTACT</p>
+      <h2 id="contact-title">Nội dung có thể cuộn bên dưới</h2>
+      <p>Phần nội dung chính có khoảng đệm phía trên và phía dưới để không bị header hoặc footer che khuất. Trên màn hình nhỏ, các liên kết điều hướng tự xuống dòng.</p>
+      <div class="quote-card">
+        <span aria-hidden="true">“</span>
+        <p>Một bố cục rõ ràng giúp các thành phần cố định hữu ích mà không làm gián đoạn việc đọc nội dung.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="about" aria-labelledby="about-title">
+      <p class="eyebrow">03 / ABOUT</p>
+      <h2 id="about-title">Footer cố định ở cạnh dưới</h2>
+      <p>Footer sử dụng <code>position: fixed</code> và <code>bottom: 0</code>. Phần đệm cuối trang đảm bảo nội dung vẫn cuộn được đến hết mà không nằm khuất phía sau footer.</p>
+      <a class="back-link" href="#home">Trở về đầu trang ↑</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Fixed Layout Practice</p>
+    <p>Bài thực hành bố cục cố định bằng CSS</p>
+  </footer>
+</body>
+</html>
